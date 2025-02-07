@@ -3,191 +3,463 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events In JQuery</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+      .box {
+        background-color: black;
+        color: white;
+        width: 400px;
+        border: 1px solid black;
+        padding: 10px;
+        margin-top: 20px;
+      }
+
+      .toggle {
+        background-color: white;
+        color: black;
+      }
+
+      .first {
+        border: 10px dotted skyblue;
+        background-color: aquamarine;
+      }
+      .second {
+        border: 10px dotted rgb(170, 235, 135);
+        background-color: rgb(0, 0, 0);
+      }
+
+      button {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+
+      button:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .box5 {
+        margin: 20px;
+        padding: 20px;
+        background-color: purple;
+        color: white;
+      }
+
+      .box6 {
+        margin: 20px;
+        padding: 20px;
+        background-color: blue;
+        color: white;
+      }
+
+      .box7 {
+        margin: 20px;
+        padding: 20px;
+        background-color: chocolate;
+        color: white;
+      }
+
+      .box-8 {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        background-color: crimson;
+        color: white;
+      }
+
+      .box-9 {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        background-color: rgb(244, 201, 210);
+        color: rgb(0, 0, 0);
+      }
+
+      .box-10 {
+        margin: 20px;
+        padding: 20px;
+        border: 2px dotted rgb(255, 255, 255);
+        background-color: green;
+        color: rgb(255, 255, 255);
+      }
+      .p1 {
+        color: red;
+      }
+      .p2 {
+        color: yellow;
+      }
+      .p3 {
+        color: bisque;
+      }
+
+      .box-11 {
+        padding: 20px;
+        border: 3px solid red;
+        background-color: blue;
+        color: white;
+      }
+
+      #wraper {
+        background-color: chartreuse;
+      }
+      .box-12 {
+        margin-top: 30px;
+        padding: 20px;
+        border: 4px solid green;
+      }
+
+      .box-13 {
+        margin-top: 20px;
+        padding: 20px;
+        border: 3px solid red;
+      }
+      .box-14 {
+        margin-top: 20px;
+        border: 3px solid red;
+        padding: 20px;
+      }
+
+      .box-15 {
+        border: 2px solid black;
+        padding: 20px;
+        margin-top: 30px;
+      }
+
+      .box-17 {
+        margin-top: 50px;
+        padding: 20px;
+        border: 1px soild red;
+        background-color: blue;
+        color: white;
+      }
+
+      .box-18 {
+        margin-top: 50px;
+        padding: 20px;
+        border: 1px soild red;
+        background-color: blue;
+        color: white;
+      }
+
+      .box-19 {
+        margin-top: 50px;
+        padding: 20px;
+        border: 1px soild red;
+        background-color: rgb(179, 174, 35);
+        color: rgb(25, 12, 12);
+      }
+
+      .ox {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        position: relative;
+      }
+
+      .box-21{
+        margin-top: 50px;
+        padding: 20px;
+        border: 1px soild red;
+        background-color: rgb(179, 174, 35);
+        color: rgb(25, 12, 12);
+      }
+    </style>
   </head>
   <body>
-    <h1>Jquery Mouse Events.</h1>
+    <h1>JQuery Class Methods</h1>
 
-    <div class="box-1">
-      <h3>This is Click Event</h3>
+    <div class="box">
+      <h3>Text Box</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-        reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
-        iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
-        molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
-        non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
-        libero magni error necessitatibus distinctio iure consequatur natus
-        suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
-        excepturi, deleniti, officiis quam assumenda optio minus mollitia
-        possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
-        sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
-        iure?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        explicabo porro hic officiis, sapiente, in dolorum, molestiae architecto
+        voluptatibus culpa facere dolorem nulla pariatur ad ea ipsa laborum
+        nihil doloremque?
       </p>
     </div>
-    <button id="btn-1">BUTTON</button>
 
+    <button id="addButton">Add Class</button>
+    <button id="removeButton">Remove Class</button>
+    <button id="ToggleButton">Toggle Class</button>
+    <hr />
+
+    <h1>JQuery Css Method</h1>
     <div class="box-2">
-        <h3>This is Double Click Event</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
-          iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
-          molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
-          non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
-          libero magni error necessitatibus distinctio iure consequatur natus
-          suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
-          excepturi, deleniti, officiis quam assumenda optio minus mollitia
-          possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
-          sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
-          iure?
-        </p>
-      </div>
-      <button id="btn-2">BUTTON</button>
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        explicabo porro hic officiis, sapiente, in dolorum, molestiae architecto
+        voluptatibus culpa facere dolorem nulla pariatur ad ea ipsa laborum
+        nihil doloremque?
+      </p>
+    </div>
+    <button id="addStyle">addStyle</button>
+    <hr />
 
-      <div class="box-3">
-        <h3>This is MouseEnter & MouseLeave Event</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
-          iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
-          molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
-          non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
-          libero magni error necessitatibus distinctio iure consequatur natus
-          suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
-          excepturi, deleniti, officiis quam assumenda optio minus mollitia
-          possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
-          sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
-          iure?
-        </p>
-      </div>
+    <h1>JQuery On & Off Method</h1>
+    <div class="box-3">
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        explicabo porro hic officiis, sapiente, in dolorum, molestiae architecto
+        voluptatibus culpa facere dolorem nulla pariatur ad ea ipsa laborum
+        nihil doloremque?
+      </p>
+    </div>
+    <button id="removeFun">remove function</button>
 
-      <div class="box-4">
-        <h3>This is MouseUp & MouseDown Event</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
-          iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
-          molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
-          non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
-          libero magni error necessitatibus distinctio iure consequatur natus
-          suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
-          excepturi, deleniti, officiis quam assumenda optio minus mollitia
-          possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
-          sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
-          iure?
-        </p>
-      </div>
+    <hr />
 
+    <div class="box5">
+      <h1>JQuery Append & Prepend</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quidem
+        ducimus repellendus quaerat at similique minima cum hic officiis
+        veritatis laborum, eum quo est sed eveniet delectus. Modi, totam
+        tempore!
+      </p>
+    </div>
+    <button id="append">Append</button>
+    <button id="prepend">Prepend</button>
+    <hr />
 
-      <h1>Jquery KeyBoard Events.</h1>
-      <div class="box-5">
-        <h3>This is KeyPress , KeyDown , KeyUp Event</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
-          iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
-          molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
-          non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
-          libero magni error necessitatibus distinctio iure consequatur natus
-          suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
-          excepturi, deleniti, officiis quam assumenda optio minus mollitia
-          possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
-          sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
-          iure?
-        </p>
-      </div>
+    <div class="box6">
+      <!--The Major diff b/w after and append is append add element at end but inside div but after insert at outside div-->
+      <h1>JQuery After & Before</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quidem
+        ducimus repellendus quaerat at similique minima cum hic officiis
+        veritatis laborum, eum quo est sed eveniet delectus. Modi, totam
+        tempore!
+      </p>
+    </div>
+    <button id="after">After</button>
+    <button id="before">Before</button>
 
+    <hr />
 
-      <h1>Jquery Form Events</h1>
-      <form action="">
-        <label for="name">Name :</label>
-        <input type="text" name="name" id="name">
+    <div class="box7">
+      <h1>JQuery Remove & empty</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quidem
+        ducimus repellendus quaerat at similique minima cum hic officiis
+        veritatis laborum, eum quo est sed eveniet delectus. Modi, totam
+        tempore!
+      </p>
+    </div>
+    <button id="empty">Empty</button>
+    <button id="remove">Remove</button>
 
-        <label for="email">Email :</label>
-        <input type="email" name="email" id="email">
+    <div class="box-8">
+      <h1>JQuery AppendTo & PrependTo</h1>
+      <p id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+        accusantium reprehenderit asperiores sit perferendis modi maiores eum
+        earum illum iusto sed sequi minus atque cum suscipit, alias quam dolor!
+        Culpa!
+      </p>
 
-        <label for="course">Course :</label>
-        <select name="course" id="course">
-            <option value="bvoc sd">Bvoc SD</option>
-            <option value="Bms">BMS</option>
-            <option value="bA">BA</option>
-            <option value="CS">bsc. CS</option>
-        </select>
+      <button id="appendTo">appendTo</button>
+      <button id="prependTo">prependTo</button>
+    </div>
 
-        <button type="submit">Submit</button>
-      </form>
+    <div class="box-9">
+      <h1>Jquery Clone</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+        recusandae dignissimos, earum provident perferendis expedita, tenetur
+        commodi omnis, tempore maiores distinctio reprehenderit incidunt
+        voluptatibus tempora dolorem placeat repudiandae eligendi cupiditate!
+      </p>
+      <button id="clone">Clone</button>
+    </div>
 
-      <h1>Jquery Window Events.</h1>
-      <button id="load">load</button>
-      <button id="unload">unload</button>
-      <button id="scroll">Scroll</button>
-      <button id="resize">Resize</button>
+    <div class="box-10">
+      <h1>Replace With & Replace All</h1>
+      <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui temporibus
+        non eos, suscipit, eius quis dolor dolorem molestias iste minus ea amet
+        minima? Reiciendis ad, fuga maiores maxime vitae exercitationem!
+      </p>
+      <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui temporibus
+        non eos, suscipit, eius quis dolor dolorem molestias iste minus ea amet
+        minima? Reiciendis ad, fuga maiores maxime vitae exercitationem!
+      </p>
+      <p class="p3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui temporibus
+        non eos, suscipit, eius quis dolor dolorem molestias iste minus ea amet
+        minima? Reiciendis ad, fuga maiores maxime vitae exercitationem!
+      </p>
+    </div>
 
-    <script>
-        $(document).ready(function(){
-            $('#btn-1').click(function(){
-                $(".box-1").hide(); 
-            });
+    <div class="box-11">
+      <h1>Jquery Wrap & unWrap</h1>
+      <h1>i am wrap class</h1>
 
-            $('#btn-2').dblclick(function(){
-                $(".box-2").hide(); 
-            }); 
+      <button id="wrap">Wrap</button>
+      <button id="unwrap">unWrap</button>
+    </div>
 
-            $('.box-3').mouseenter(function(){
-                $(this).css({backgroundColor:'red',padding:20});
-            });
+    <div class="box-12">
+      <h1>Jquery Wrapall & WrapInner</h1>
+      <p id="wri">WrapInner</p>
 
-            $('.box-3').mouseleave(function(){
-                $(this).css({backgroundColor:'white',padding:0});
-            });
+      <button id="wrapall">WrapAll</button>
+      <button id="wrapinner">WrapInner</button>
+    </div>
 
-            $('.box-4').mousedown(function(){
-                $(this).css({backgroundColor:'green',padding:20});
-            });
+    <div class="box-13">
+      <h1>Width & Height</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquid
+      asperiores labore ipsam soluta veniam aperiam quia modi. Ducimus corrupti,
+      vitae labore minus voluptatem dolores asperiores odit vel atque veniam?
+      <details>
+        <summary>Type of Width</summary>
+        <ul>
+          <li>width()</li>
+          <li>innerWidth()</li>
+          <li>outerWidth()</li>
+          <li>outerWidth(True)</li>
+        </ul>
+      </details>
 
-            $('.box-4').mouseup(function(){
-                $(this).css({backgroundColor:'yellow',padding:20});
-            });
+      <details>
+        <summary>Type of Height</summary>
+        <ul>
+          <li>heigth()</li>
+          <li>innerHeight()</li>
+          <li>outerHeight()</li>
+          <li>outerHeight(True)</li>
+        </ul>
+      </details>
+      <button id="Width">width</button>
+      <button id="Height">height</button>
+      <div id="text"></div>
+    </div>
 
-            $('.box-5').keypress(function(){
-                $(this).css({backgroundColor:'red',padding:20});
-            });
-            $('.box-5').keyup(function(){
-                $(this).css({backgroundColor:'blue',padding:20});
-            });
-            $('.box-5').keydown(function(){
-                $(this).css({backgroundColor:'red',padding:20});
-            });
+    <div class="box-14">
+      <h1>jQuery Position & Offset Method</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ipsa
+        libero expedita repellat vel harum quaerat saepe aperiam facilis.
+        Architecto odio unde omnis eum, deserunt dicta neque quibusdam nobis
+        facere?
+      </p>
 
-            $('input').focus(function(){
-                $(this).css({backgroundColor:'red',padding:20,color:'white'});
-            }); 
+      <button id="offset">Offset</button>
+      <button id="position">Position</button>
+    </div>
 
-            $('input').blur(function(){
-                $(this).css({backgroundColor:'white',padding:0,color:'black'});
-            });
+    <div class="box-15">
+      <button id="leftScroll">leftScroll</button>
+      <button id="topScroll">TopScroll</button>
 
-            $('form').submit(function(){
-                alert('Form Submitted');
-            });
+      <h1>Jquery leftScroll & rigthScroll</h1>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis
+      molestias dolorum laudantium iusto voluptas quae quidem provident vel
+      consequuntur consectetur voluptatem dolor est ducimus quod eius magnam,
+      magni sed. Provident error maiores id delectus necessitatibus, perferendis
+      magnam, commodi maxime ex quibusdam placeat quod vel dolores obcaecati
+      laborum vitae cupiditate possimus perspiciatis exercitationem incidunt
+      dolore repellendus? Itaque, optio blanditiis! Officiis. Repellat porro
+      facere nesciunt enim. Qui id ea iste doloremque. A beatae quas
+      voluptatibus dolorem adipisci amet accusamus. Quas ab voluptatibus qui
+      commodi ex eos excepturi reiciendis officiis fugiat officia. Quia, ipsam
+      expedita. Veniam et doloremque, aliquam, quae culpa dignissimos,
+      recusandae vero distinctio aliquid iusto quibusdam amet excepturi? Iure
+      asperiores fugiat, veritatis placeat ad laboriosam. Culpa expedita itaque
+      totam eveniet. Molestiae, impedit error. Doloribus, consequuntur quo modi
+      consectetur velit recusandae quasi eos quidem maiores. Ipsam consectetur
+      laborum veritatis accusantium alias. Voluptates, dolor! Tempore,
+      accusantium voluptas laboriosam recusandae nostrum nemo quasi.
+    </div>
 
-            $('option').select(function(){
-                alert('Course Selected');
-            });
+    <div class="box-16">
+      <button id="hasclass" class="nn">hasClass</button>
 
-            $('#load').click(function(){
-                $(window).load(function(){
-                    alert('Window Loaded');
-                });
+      <h1>Jquery hasClass</h1>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis
+      molestias dolorum laudantium iusto voluptas quae quidem provident vel
+      consequuntur consectetur voluptatem dolor est ducimus quod eius magnam,
+      magni sed. Provident error maiores id delectus necessitatibus, perferendis
+      magnam, commodi maxime ex quibusdam placeat quod vel dolores obcaecati
+      laborum vitae cupiditate possimus perspiciatis exercitationem incidunt
+      dolore repellendus? Itaque, optio blanditiis! Officiis. Repellat porro
+      facere nesciunt enim. Qui id ea iste doloremque. A beatae quas
+      voluptatibus dolorem adipisci amet accusamus. Quas ab voluptatibus qui
+      commodi ex eos excepturi reiciendis officiis fugiat officia. Quia, ipsam
+      expedita. Veniam et doloremque, aliquam, quae culpa dignissimos,
+      recusandae vero distinctio aliquid iusto quibusdam amet excepturi? Iure
+      asperiores fugiat, veritatis placeat ad laboriosam. Culpa expedita itaque
+      totam eveniet. Molestiae, impedit error. Doloribus, consequuntur quo modi
+      consectetur velit recusandae quasi eos quidem maiores. Ipsam consectetur
+      laborum veritatis accusantium alias. Voluptates, dolor! Tempore,
+      accusantium voluptas laboriosam recusandae nostrum nemo quasi.
+    </div>
 
-            })
-            })
+    <div class="box-17">
+      <h1>Jquery hide() , show() , toggle()</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil ad
+        obcaecati saepe vero animi id aliquam libero sapiente repellendus,
+        recusandae fuga deleniti voluptates neque, excepturi adipisci ratione,
+        voluptatem veritatis!
+      </p>
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+      <button id="toggle">Toggle</button>
+    </div>
 
+    <div class="box-18">
+      <h1>Jquery fadeIn() , fadeOut() , fadeToggle()</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+        molestias dolore voluptate quis soluta a ipsa vero accusamus porro fuga
+        enim corrupti maxime magni reiciendis, eius quae tempora provident?
+        Illum!
+      </p>
+    </div>
+    <button id="fadeIn">fadeIn()</button>
+    <button id="fadeOut">fadeOut()</button>
+    <button id="fadeToggle">fadeToggle()</button>
 
+    <br />
 
+    <div class="box-19">
+      <h1>Jquery slideDown() , slideUp() , slideToggle()</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+        voluptatem eveniet dolorum saepe recusandae pariatur ut voluptas ex
+        placeat, soluta quasi culpa totam minus quibusdam sunt earum eum
+        eligendi ipsam.
+      </p>
+    </div>
 
-        });
-    </script>
+    <button id="slideDown">slideDown</button>
+    <button id="slideUp">slideUp</button>
+    <button id="slideToggle">slideToggle</button>
+
+    <div class="box-20">
+      <h1>Animation</h1>
+      <div class="ox"></div>
+    </div>
+
+    <button id="animate">animate</button>
+    <button id="stop">stop</button>
+
+    <div class="box-21">
+      <h1>Jquery Method Chaining</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        corrupti cum suscipit inventore libero optio maiores neque harum
+        repellat officia modi et ex aut deserunt quae rem similique, velit vero?
+      </p>
+    </div>
+
+    <button id="animate2">animate</button>
+
+    <script src="script.js"></script>
   </body>
 </html>

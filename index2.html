@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events In JQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Jquery Mouse Events.</h1>
+
+    <div class="box-1">
+      <h3>This is Click Event</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+        reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
+        iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
+        molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
+        non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
+        libero magni error necessitatibus distinctio iure consequatur natus
+        suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
+        excepturi, deleniti, officiis quam assumenda optio minus mollitia
+        possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
+        sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
+        iure?
+      </p>
+    </div>
+    <button id="btn-1">BUTTON</button>
+
+    <div class="box-2">
+        <h3>This is Double Click Event</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
+          iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
+          molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
+          non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
+          libero magni error necessitatibus distinctio iure consequatur natus
+          suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
+          excepturi, deleniti, officiis quam assumenda optio minus mollitia
+          possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
+          sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
+          iure?
+        </p>
+      </div>
+      <button id="btn-2">BUTTON</button>
+
+      <div class="box-3">
+        <h3>This is MouseEnter & MouseLeave Event</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
+          iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
+          molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
+          non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
+          libero magni error necessitatibus distinctio iure consequatur natus
+          suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
+          excepturi, deleniti, officiis quam assumenda optio minus mollitia
+          possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
+          sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
+          iure?
+        </p>
+      </div>
+
+      <div class="box-4">
+        <h3>This is MouseUp & MouseDown Event</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
+          iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
+          molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
+          non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
+          libero magni error necessitatibus distinctio iure consequatur natus
+          suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
+          excepturi, deleniti, officiis quam assumenda optio minus mollitia
+          possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
+          sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
+          iure?
+        </p>
+      </div>
+
+
+      <h1>Jquery KeyBoard Events.</h1>
+      <div class="box-5">
+        <h3>This is KeyPress , KeyDown , KeyUp Event</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          reprehenderit rem vel distinctio modi ab! Nesciunt culpa quas impedit
+          iste dignissimos veritatis, aliquid laborum, numquam neque, quos nihil
+          molestias dolorem! Et ad culpa totam accusantium quisquam quasi aut ab
+          non harum commodi sit reprehenderit nesciunt modi hic quibusdam, numquam
+          libero magni error necessitatibus distinctio iure consequatur natus
+          suscipit. Quasi, facere. Fuga accusantium dicta libero ullam adipisci
+          excepturi, deleniti, officiis quam assumenda optio minus mollitia
+          possimus dolorem. Perspiciatis pariatur laborum similique obcaecati
+          sapiente! Perferendis error eius suscipit odio obcaecati, repellendus
+          iure?
+        </p>
+      </div>
+
+
+      <h1>Jquery Form Events</h1>
+      <form action="">
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email">
+
+        <label for="course">Course :</label>
+        <select name="course" id="course">
+            <option value="bvoc sd">Bvoc SD</option>
+            <option value="Bms">BMS</option>
+            <option value="bA">BA</option>
+            <option value="CS">bsc. CS</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <h1>Jquery Window Events.</h1>
+      <button id="load">load</button>
+      <button id="unload">unload</button>
+      <button id="scroll">Scroll</button>
+      <button id="resize">Resize</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#btn-1').click(function(){
+                $(".box-1").hide(); 
+            });
+
+            $('#btn-2').dblclick(function(){
+                $(".box-2").hide(); 
+            }); 
+
+            $('.box-3').mouseenter(function(){
+                $(this).css({backgroundColor:'red',padding:20});
+            });
+
+            $('.box-3').mouseleave(function(){
+                $(this).css({backgroundColor:'white',padding:0});
+            });
+
+            $('.box-4').mousedown(function(){
+                $(this).css({backgroundColor:'green',padding:20});
+            });
+
+            $('.box-4').mouseup(function(){
+                $(this).css({backgroundColor:'yellow',padding:20});
+            });
+
+            $('.box-5').keypress(function(){
+                $(this).css({backgroundColor:'red',padding:20});
+            });
+            $('.box-5').keyup(function(){
+                $(this).css({backgroundColor:'blue',padding:20});
+            });
+            $('.box-5').keydown(function(){
+                $(this).css({backgroundColor:'red',padding:20});
+            });
+
+            $('input').focus(function(){
+                $(this).css({backgroundColor:'red',padding:20,color:'white'});
+            }); 
+
+            $('input').blur(function(){
+                $(this).css({backgroundColor:'white',padding:0,color:'black'});
+            });
+
+            $('form').submit(function(){
+                alert('Form Submitted');
+            });
+
+            $('option').select(function(){
+                alert('Course Selected');
+            });
+
+            $('#load').click(function(){
+                $(window).load(function(){
+                    alert('Window Loaded');
+                });
+
+            })
+            })
+
+
+
+
+        });
+    </script>
+  </body>
+</html>
